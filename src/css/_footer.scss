@@ -3,10 +3,10 @@
 -------------------------------------------------- */
 .footer {
   position: relative;
-  width: 100%;
   display: inline-block;
-  background-color: $black;
+  width: 100%;
   padding: 50px 0 90px;
+  background-color: $black;
 
   .separator {
     position: relative;
@@ -16,7 +16,7 @@
       top: 0;
       left: -21px;
       height: 280px;
-      border-left: 1px solid #2b2b2a;
+      border-left: 1px solid $separator-color;
       content: '';
     }
 
@@ -25,7 +25,7 @@
       top: 0;
       right: 50px;
       height: 280px;
-      border-right: 1px solid #2b2b2a;
+      border-right: 1px solid $separator-color;
       content: '';
     }
   }
@@ -71,7 +71,7 @@
   }
 
   // Subscribe
-  .subscribe-wrapper {
+  .footer-email-wrapper {
     h6 {
       font-weight: bold;
     }
@@ -133,7 +133,7 @@
 
 }
 
-.social-icons {
+.social-media-icons {
   position: absolute;
   top: 50%;
   right: 0;

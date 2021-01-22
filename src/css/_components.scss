@@ -115,7 +115,7 @@
 }
 
 
-.economies-program {
+.economic-wrapper {
   width: 100%;
   display: inline-block;
   padding: 15px;
@@ -125,7 +125,7 @@
   .container {
     text-align: center;
 
-    .e-program {
+    .economic-title {
       display: inline-block;
       width: 100%;
       text-align: center;
@@ -139,7 +139,7 @@
 
 }
 
-.carte-advantage {
+.card-image-with-text {
   position: relative;
   overflow: hidden;
 
@@ -177,17 +177,17 @@
 
 
 
-    .credit-card {
+    .credit-card-img {
       margin: 10px 0;
       text-align: center;
     }
 
-    .e-client {
+    .client-benefits-section {
       margin-bottom: 10px;
 
-      .client-wrap {
+      .benefit-wrap {
 
-        .base-client {
+        .benefit-list {
           justify-content: center;
 
           li {
@@ -200,7 +200,7 @@
 
               &:hover {
                 color: $red;
-                margin-left: 2px;
+                // padding-right: 2px;
               }
             }
 
@@ -247,7 +247,7 @@
       // }
     }
 
-    .veux {
+    .card-txt-link {
       text-align: center;
 
       p {
@@ -266,9 +266,9 @@
 
 // bottom section
 
-.carte-advantage {
-  .first-section {
-    position: relative;
+.card-image-with-text {
+  .image-section {
+    // position: relative;
     overflow: hidden;
 
     .bg-img {
@@ -276,7 +276,7 @@
     }
   }
 
-  .second-section {
+  .card-content {
     &:after {
       content: '';
       position: absolute;
