@@ -1,0 +1,87 @@
+/* --------------------------------------------------
+ Header Style
+-------------------------------------------------- */
+
+header {
+	height: 135px;
+	color: $white;
+	background-color: $black;
+	transition: all 0.5s ease 0s;
+
+	.navbar {
+		height: 100%;
+
+		// Left side
+		.site-header-left {
+			display: inherit;
+			align-items: center;
+		}
+
+		// Logo
+		.logo {
+			width: 380px;
+		}
+
+		// Right side
+		.site-header-right {
+			display: inherit;
+			align-items: center;
+
+			@media (max-width:1024px) {
+				display: block;
+			}
+
+			.fa {
+				// font-size: 30px;
+				@extend .h6;
+			}
+		}
+
+		// Menu link 
+		.nav-item {
+			padding: 0 16px;
+
+			.nav-link {
+				padding: 0;
+				text-transform: capitalize;
+				letter-spacing: 1px;
+				color: inherit;
+				font-weight: bold;
+
+				span {
+					color: $red;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		.navbar-collapse {
+			.site-header-nav {
+				width: 100%;
+
+				.navbar-nav {
+					justify-content: space-between;
+				}
+
+
+			}
+		}
+
+		.dropdown {
+			.dropdown-toggle {
+				&::after {
+					display: none;
+				}
+
+				.fa-angle-down {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+
+	&:hover {
+		color: $black;
+		background-color: $header-color;
+	}
+}

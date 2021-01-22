@@ -1,0 +1,25 @@
+/* --------------------------------------------------
+  2.0 Mixins
+
+-------------------------------------------------- */
+
+@mixin css3-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+  -khtml-#{$property}: #{$value};
+  -moz-#{$property}: #{$value};
+  -ms-#{$property}: #{$value};
+  -o-#{$property}: #{$value};
+  #{$property}: #{$value};
+}
+@mixin css3-sufix($property, $value) {
+  #{$property}: -webkit-#{$value};
+  #{$property}: -khtml-#{$value};
+  #{$property}: -moz-#{$value};
+  #{$property}: -ms-#{$value};
+  #{$property}: -o-#{$value};
+  #{$property}: #{$value};
+}
+
+
+
+

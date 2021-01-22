@@ -1,0 +1,427 @@
+/* --------------------------------------------------
+  Section
+-------------------------------------------------- */
+
+
+.site-section-banner {
+
+  position: relative;
+
+  .site-banner-content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .site-content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      .site-content-left {
+        color: $white;
+        position: relative;
+        width: 69%;
+        margin-right: 1%;
+
+        h1 {
+          line-height: 74px;
+          font-weight: bold;
+        }
+
+        h3 {
+          /*font-size: 47px;*/
+          letter-spacing: 3px;
+          line-height: 48px;
+          font-weight: bold;
+        }
+
+      }
+
+      .site-content-right {
+        position: relative;
+        width: 30%;
+        background: rgb(135, 14, 5);
+        background: linear-gradient(90deg, rgba(135, 14, 5, 1) 0%, rgba(204, 30, 6, 1) 50%, rgba(135, 14, 5, 1) 100%);
+        margin: 0 auto;
+
+        &::before {
+          width: 8px;
+          position: absolute;
+          height: 100%;
+          background-color: $white;
+          content: "";
+          top: 50%;
+          left: -30px;
+          transform: translateY(-50%);
+        }
+
+        .btn-banner {
+          width: 100%;
+          display: inline-block;
+          padding: 15px;
+          font-size: 72px;
+          font-size: 3.65vw;
+          font-weight: bold;
+          line-height: 3.65vw;
+          color: $white;
+          text-align: center;
+          text-decoration: none;
+          cursor: pointer;
+          
+        
+
+          span {
+            font-size: 33px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  .site-augmentes {
+    text-align: center;
+    background-color: rgba($black, 0.5);
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    list-style-type: none;
+    margin-bottom: 0;
+
+    h6 {
+      color: $agr-color;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    li {
+      display: inline-block;
+      border-right: 2px solid white;
+      line-height: normal;
+
+      a {
+        color: $white;
+        position: relative;
+        padding: 0 15px;
+        font-weight: lighter;
+        &:hover {
+          color: $red;
+        }
+      }
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+// Section Cards
+.section-card {
+  background: rgb(236, 237, 234);
+  background: linear-gradient(-90deg, rgba(236, 237, 234, 1) 0%, rgba(248, 248, 246, 1) 50%, rgba(220, 219, 216, 1) 100%);
+
+  .section-card-wrapper {
+    // padding: 85px 130px 45px 130px;
+    padding-top: 70px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+
+    .section-card {
+      background-image: url('../assets/img/rectangle-1.webp');
+      background-repeat: no-repeat;
+      padding: 15px 3.6vw 3.6vw;
+      background-size: cover;
+      filter: drop-shadow(4.702px 6.472px 1px rgba(60, 60, 59, 0.28));
+      width: calc(50% - 5.1vw /2);
+      margin-right: 5.1vw;
+
+      .bussiness-icon {
+        margin-bottom: 35px;
+      }
+
+      .section-body {
+        .card-title {
+          position: relative;
+          margin-bottom: 30px;
+          letter-spacing: -1px;
+
+          &::after {
+            position: absolute;
+            left: 50%;
+            width: 203px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-bottom: 9px solid $black;
+            transform: translateX(-50%);
+            content: " ";
+          }
+
+          h3 {
+            font-weight: bold;
+            color: $agr-color;
+          }
+
+        }
+
+        .card-body {
+          padding: 15px;
+          display: inline-block;
+
+          p {
+            // font-size: 28px;
+            text-align: left;
+          }
+        }
+      }
+
+      // Second Image
+
+      &:nth-child(2) {
+        background-image: url("../assets/img/rectangle-2.webp");
+        margin: 0;
+        background-position: right;
+      }
+    }
+  }
+
+  .site-section-banner-content {
+    text-align: center;
+    padding-bottom: 40px;
+
+    .site-content-card {
+
+      .site-banner-contact {
+        margin-bottom: 35px;
+
+        h6 {
+          font-weight: bold;
+          color: $black;
+        }
+      }
+
+      .btn-gr {
+        font-size: 37px;
+        padding: 20px 140px;
+        position: relative;
+        // margin-bottom: 45px;
+
+        &::before {
+          background-image: url('../assets/img/BOUTON_icon2.webp');
+          content: " ";
+          width: 121px;
+          height: 121px;
+          display: inline-block;
+          position: absolute;
+          background-repeat: no-repeat;
+          left: -40px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+        }
+      }
+
+    }
+  }
+}
+
+.site-expertise {
+  background: rgb(135, 14, 5);
+  background: linear-gradient(90deg, rgba(135, 14, 5, 1) 0%, rgba(204, 30, 6, 1) 50%, rgba(135, 14, 5, 1) 100%);
+  color: $white;
+
+  .site-expertise-left {
+    padding: 20px 4vw 20px 9vw;
+
+    .tour-title {
+      margin-bottom: 40px;
+
+      h3 {
+        line-height: 60px;
+        font-weight: bold;
+      }
+    }
+
+    .tour-content {
+
+      h4 {
+        position: relative;
+        display: inline-block;
+
+        &::after {
+          position: absolute;
+          right: -3.8vw;
+          display: inline-block;
+          background-image: url('../assets/img/BOUTON_icon2.webp');
+          width: 2.9vw;
+          height: 2.9vw;
+          background-size: 2.9vw;
+          background-repeat: no-repeat;
+          content: " ";
+        }
+      }
+    }
+  }
+
+  .site-expertise-banner {
+    height: 100%;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// Entrepreneurs-Quotes-Section
+
+.section-entrepreneurs {
+  background-color: $black;
+  color: $white;
+  text-align: left;
+
+  .entrepreneurs-slider {
+    padding: 100px 0;
+    margin-bottom: 0;
+
+    .slick-prev,
+    .slick-next {
+      display: none;
+
+      &::before {
+        content: " ";
+      }
+    }
+
+    .slick-arrow {
+      left: 0;
+      right: 0;
+    }
+
+    .site-entrepreneurs {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .site-entrepreneurs-left {
+        width: calc(50% - 5vw);
+        float: left;
+        margin-right: 5vw;
+
+      }
+
+      .site-entrepreneurs-right {
+        width: calc(50% - 5vw);
+        float: right;
+        margin-left: 5vw;
+
+        .entrepreneurs-quotes-title {
+          margin-bottom: 30px;
+
+          h6 {
+            margin-bottom: 20px;
+          }
+
+        }
+
+        .entrepreneurs-quotes-body {
+          position: relative;
+          max-width: 25vw;
+          margin-bottom: 30px;
+
+          p {
+            position: relative;
+
+            &::before {
+              background-image: url("../assets/img/Quote-icon.webp");
+              position: absolute;
+              content: " ";
+              height: 60px;
+              width: 80px;
+              top: -30px;
+              left: -100px;
+            }
+
+            &::after {
+              background-image: url("../assets/img/Quote-icon.webp");
+              position: absolute;
+              content: " ";
+              height: 60px;
+              width: 80px;
+              top: auto;
+              left: auto;
+              bottom: -2.8vw;
+              margin-left: 20px;
+              transform: rotate(180deg);
+            }
+          }
+
+        }
+      }
+
+    }
+
+    .slick-dots {
+      bottom: auto;
+
+      li {
+        // width: 23px;
+        // height: 24px;
+        border-radius: 50%;
+        border: 3px solid $white;
+        margin: 0 20px;
+
+        // &::before {
+        //   background-image: url('/src/assets/img/Ellipse-lign.png');
+        //   background-repeat: no-repeat;
+        //   content: " ";
+        //   height: 15px;
+        //   width: 24px;
+        //   position: absolute;
+        //   background-repeat: no-repeat;
+        //   transform: rotate(173deg);
+        //   top: 11px;
+        //   bottom: 0;
+        //   right: 13px;
+
+        //   &:first-child{
+        //     background-image: none;
+        //     content: " ";
+        //   }
+        // }
+
+        &::after {
+          background-image: url("../assets/img/Ellipse-lign.png");
+          background-repeat: no-repeat;
+          content: " ";
+          height: 35px;
+          width: 35px;
+          position: absolute;
+          transform: rotate(23deg);
+          top: 0;
+          bottom: 0;
+          left: 100%;
+
+          &:last-child {
+            background-image: none;
+            content: none;
+          }
+        }
+
+      }
+
+      .slick-active {
+        background-color: $text-title;
+        border-radius: 50%;
+        border: 0;
+      }
+    }
+  }
+}

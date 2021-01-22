@@ -1,0 +1,301 @@
+/* --------------------------------------------------
+   Components
+-------------------------------------------------- */
+.image-text {
+  position: relative;
+
+  .side-strip {
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    right: 0;
+    margin: auto;
+    @extend .bg-gold-gradient;
+
+  }
+
+  .iwt-wrapper {
+    position: relative;
+
+    .iwt-inner-wrapper {
+      padding-top: 100px;
+      padding-bottom: 100px;
+
+    }
+
+    .img-wrapper {
+      width: 100%;
+
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    .text-row {
+      background-color: $dark-gry;
+      padding: 5px;
+      text-align: center;
+
+      &:nth-child(2n) {
+        background: darkgrey;
+      }
+
+      h4,
+      p {
+        color: $white;
+        margin: 0;
+      }
+    }
+
+
+    .arrow-appli {
+      position: relative;
+
+      .appli {
+        background-color: $red;
+        color: $white;
+        padding: 5px 50px;
+        text-align: center;
+
+        h4 {
+          margin: 0;
+          font-weight: 900;
+        }
+      }
+    }
+
+    .iwt-title {
+      position: relative;
+      margin-bottom: 30px;
+
+      h3 {
+        font-weight: 900;
+
+        &::before {
+          position: absolute;
+          bottom: -10px;
+          z-index: -1;
+          height: 8px;
+          width: 30%;
+          background-color: $black;
+          content: '';
+        }
+      }
+    }
+
+    .iwt-subtitle {
+      color: $red;
+      margin-bottom: 65px;
+
+    }
+
+    .image-slider {
+      max-width: 100%;
+      overflow: hidden;
+
+      .slider-main {
+        // max-width: 50%;
+
+        img {
+          // width: 50%;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    &:nth-child(2n) {
+      .side-strip {
+        right: auto;
+        left: 0;
+        background: gray;
+      }
+    }
+  }
+}
+
+
+.economies-program {
+  width: 100%;
+  display: inline-block;
+  padding: 15px;
+  background-color: $black;
+  text-align: center;
+
+  .container {
+    text-align: center;
+
+    .e-program {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      color: $white;
+    }
+
+    h4 {
+      color: $white;
+    }
+  }
+
+}
+
+.carte-advantage {
+  position: relative;
+  overflow: hidden;
+
+  .bg-img {
+    position: absolute;
+    // height: 100%;
+    width: 100%;
+  }
+
+  .main-cardwrap {
+    padding: 20px 0;
+    position: relative;
+    z-index: 1;
+
+    .cart-head {
+      position: relative;
+      text-align: center;
+      font-weight: bold;
+
+      h2 {
+        background: linear-gradient(to right, #aa8b02 0%, #e5d693 50%, #aa8b02 100%);
+        font-weight: bold;
+        line-height: 76px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+      }
+
+      .title-divider {
+        &:after {
+          background: $white;
+        }
+      }
+    }
+
+
+
+    .credit-card {
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .e-client {
+      margin-bottom: 10px;
+
+      .client-wrap {
+
+        .base-client {
+          justify-content: center;
+
+          li {
+            position: relative;
+            padding-right: 40px;
+            margin-bottom: 15px;
+
+            a {
+              color: $white;
+
+              &:hover {
+                color: $red;
+                margin-left: 2px;
+              }
+            }
+
+            &::after {
+              content: "";
+              position: absolute;
+              right: 20px;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              height: 30px;
+              width: 2px;
+              background-color: #fff;
+
+
+
+            }
+
+            &:last-child {
+              padding-right: 0;
+
+              &::after {
+                display: none;
+              }
+            }
+
+            a {
+              color: $white;
+              display: inline-block;
+
+              p {
+                margin-bottom: 0;
+              }
+            }
+
+          }
+        }
+
+      }
+
+      // .astlye {
+      //   border-right: 1px solid $white;
+      //   border-left: 1px solid $white;
+      // }
+    }
+
+    .veux {
+      text-align: center;
+
+      p {
+        color: $white;
+        font-weight: 900;
+      }
+
+      a {
+        color: $white;
+      }
+
+    }
+  }
+}
+
+
+// bottom section
+
+.carte-advantage {
+  .first-section {
+    position: relative;
+    overflow: hidden;
+
+    .bg-img {
+      height: 500px;
+    }
+  }
+
+  .second-section {
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 500px;
+      width: 100vw;
+      background-image: url('../assets/img/graygredi.png');
+      background-size: cover;
+      background-repeat: repeat;
+      left: -185px;
+
+      // content: "";
+      // position: absolute;
+      // top: 0;
+      // left: 55%;
+      // transform: skew(22deg) translateX(-50%);
+      // width: 1000px;
+      // height: 100%;
+      // background-image: linear-gradient(120deg, #222222, #333333);
+    }
+  }
+}

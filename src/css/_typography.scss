@@ -1,0 +1,75 @@
+/* --------------------------------------------------
+ Typography
+-------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $gothic;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+.h1 {
+  /*font-size: 83px;*/
+  font-size: 4.3vw;
+}
+
+h2,
+.h2 {
+  /*font-size: 88px;*/
+  font-size: 4.6vw;
+}
+
+h3,
+.h3 {
+  /*font-size: 67px;*/
+  font-size: 3.5vw;
+}
+
+h4,
+.h4 {
+  /*font-size: 42px;*/
+  font-size: 2.2vw;
+}
+
+h5,
+.h5 {
+  /*font-size: 37px;*/
+  font-size: 1.95vw;
+}
+
+h6,
+.h6 {
+  /*font-size: 29px;*/
+  font-size: 1.5vw;
+  line-height: 1.72;
+  color: $white;
+}
+
+p {
+  /*font-size: 25px;*/
+  font-size: 1.3vw;
+  line-height: 1.45;
+
+  &.large {
+    /*font-size: 33px;*/
+    font-size: 1.7vw;
+  }
+
+  &.small {
+    /*font-size: 23px;*/
+  font-size: 1.1vw;
+  }
+}
+
+.large {
+  p {
+    @extend .large;
+  }
+}
