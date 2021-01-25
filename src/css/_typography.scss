@@ -8,10 +8,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $gothic;
-  font-weight: bold;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-family: $gothic;
 }
 
 h1,
@@ -47,9 +47,13 @@ h5,
 h6,
 .h6 {
   /*font-size: 29px;*/
+  color: $white;
   font-size: 1.5vw;
   line-height: 1.72;
-  color: $white;
+
+  @media(max-width: 767px) {
+    font-size: 16px;
+  }
 }
 
 p {
@@ -64,7 +68,7 @@ p {
 
   &.small {
     /*font-size: 23px;*/
-  font-size: 1.1vw;
+    font-size: 1.1vw;
   }
 }
 
